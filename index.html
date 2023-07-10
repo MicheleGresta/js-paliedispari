@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body > * {
+            margin-bottom: 1rem;
+        }
+        span {
+            display: inline-block;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1>Pari o Dispari !</h1>
+
+    <span>Scegli pari o dispari:</span>
+    
+    <select id="select-menu">
+      <option>Pari</option>
+      <option>Dispari</option>
+    </select>
+    
+    <br>
+    <span>Scegli un numero da 1 a 5:</span>
+    <input type="text" id="player-input">
+
+    <button id="btn-action">Genera numero avversario</button>
+    <br>
+    <span>Numero dell'avversario: </span> 
+    <span id="numero-avversario"></span>
+    <br>
+    <button id="btn-result">Controlla il risultato</button>
+    <br>
+    <div id="vincitore"></div>
+
+    <script type="text/javascript" src="./script/script.js"></script>
+</body>
+</html>
