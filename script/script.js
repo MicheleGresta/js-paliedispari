@@ -47,3 +47,36 @@ btnResult.addEventListener("click", function () {
     }
 }
 )
+
+
+
+// ESERCIZIO 2
+
+const btnVerifica = document.getElementById("btn-verifica");
+const parola = document.getElementById("parola");
+const parolafinale = document.getElementById("parolafinale");
+
+
+btnVerifica.addEventListener("click", function() {
+    verificatoreParolaPalindroma();
+})
+
+
+function verificatoreParolaPalindroma() {
+    // prendo il valore della parola
+    parolaValue = (parola.value);
+    // divido il valore con split 
+    const parolaDivisa = parolaValue.split("");
+    // inverto le lettere ottenute con reverse
+    const parolaInvertita = parolaDivisa.reverse();
+    // unisco le parole con join("")
+    const parolaUnita = parolaInvertita.join("");
+    // confronto parola iniziale con ultima
+    if (parolaValue === parolaUnita) {
+        parolafinale.innerHTML = (parolaValue + " è una parola palindroma.")
+    } else {
+        parolafinale.innerHTML = (parolaValue + " non è una parola palindroma.")
+    }
+
+
+}
